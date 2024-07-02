@@ -228,14 +228,16 @@
     </section>
     <!--Seccion Footer-->
     <footer>
-        <p>Todos los derechos reservados - 2022</p>
+        <p>&copy; <span id="year"></span> Todos los derechos reservados.</p>
         <div class="redes">
             <a href="https://github.com/juanCa200"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/juan-ram%C3%ADrez-9a658a206/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
